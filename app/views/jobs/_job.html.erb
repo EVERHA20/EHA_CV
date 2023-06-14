@@ -1,0 +1,23 @@
+<div id="<%= dom_id job %>">
+  <p>
+    <strong>&nbsp</strong>
+      <style>p.ex1 {
+      font-size: 30px;
+      } 
+      </style>
+    <p class="ex1"><%= job.title %></p>
+  </p>
+
+  <p>
+    <strong>Fecha de Entrada:</strong>
+    <%= job.start_date.strftime("%Y-%m") %>
+    &nbsp&nbsp&nbsp&nbsp&nbsp
+    <strong>Fecha de salida:</strong>
+    <%= job.end_date.strftime("%Y-%m") %>
+  </p>
+
+  <p>
+    <strong>Descripcion de Actividades:</strong>
+    <%= job.desc %>
+  </p>
+</div>

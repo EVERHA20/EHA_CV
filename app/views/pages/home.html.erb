@@ -1,0 +1,135 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <title>My Cv</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+
+    h6 {
+      font-family: ABeeZee;
+      font-size: 14px;
+    }
+
+    p {
+      font-family: Cabin;
+      font-size: 13px;
+    }
+
+    h3 {
+      font-family: Baloo;
+      font-size: 22px;
+    }
+
+    .fas {
+      color: rgb(0, 45, 82);
+
+    }
+
+    .progress-bar {
+      background: rgb(0, 82, 48);
+    }
+
+    .img {
+      width: 100%;
+      background: rgb(0, 0, 0);
+      display: flex;
+      justify-items: center;
+    }
+
+
+
+    .footer {
+      position: relative;
+      bottom: -50px;
+      left: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="Homepage ">
+    <div class="row mx-2 my-2">
+      <div class="col-lg-4 col-md-4 col-12">
+        <div class="card  ">
+          <div class="img ">
+            <%= image_tag ("Ever2.jpg"), :width => "100%"  %>
+          </div>
+
+          <h2 class="ml-4">Ever Hinojosa Aguirre</h2>
+          <hr class="mt-n1">
+          <div class="card-body mt-n3">
+            <h6><i class='fas fa-briefcase  mr-3'></i>Ingeniero Administrador en Sistemas</h6>
+            <h6><i class='fas fa-home mt-1 mr-3'></i>Monterrey, Nuevo Leon</h6>
+            <h6><a href = "mailto: everha20@hotmail.com">everha20@hotmail.com</a>
+            <h6><i class="fas fa-phone-alt mt-1 mr-3"></i>num: 8125799150</h6>
+            <hr>
+            <h3><i class="fas fa-cogs mr-3 mb-4"></i> Habilidades</h3>
+                <ul>
+                <li>Productos Office</li>
+                <li>SQL</li>
+                <li>C++</li>
+                <li>Power BI</li>
+                <li>Ruby on Rails</li>
+                <li>HTML y CSS</li>
+                </ul>
+            <hr>
+            <h3><i class="fas fa-globe  mr-3 mt-3 mb-4"></i> Lenguajes:</h3>
+            <h6>Español</h6>
+            <div class="progress rounded-pill my-3" style="height: 20px;">
+              <div class="progress-bar" style=" height: 100%; width: 100%;"></div>
+            </div>
+            <h6>Ingles</h6>
+            <div class="progress rounded-pill my-3" style="height: 20px;">
+              <div class="progress-bar" style=" height: 100%; width: 90%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-8 col-md-8 col-12">
+        <div class="card shadow-sm">
+          <div class="card-body">
+          <h2 class=" mb-2"><i class="fas fa-certificate"></i> Educacion</h2>
+            <h5 class="mt-4">CIDEB (UANL)</h5>
+            <h6><i class="fas fa-calendar my-2 mr-2"></i> Preparatoria</h6>
+            <hr>
+            <h5 class="mt-4">Facultad de Ingenieria Mecanica y Electrica</h5>
+            <h6><i class="fas fa-calendar my-2 mr-2"></i> Universidad</h6>
+            <hr>
+            </div>
+
+        </div>
+        <div class="card mt-4">
+          <div class="card-body">
+            <h2 class=" mb-2"><i class="fas fa-certificate"></i> Intereses:</h2>
+            <h5 class="mt-4">Programacion</h5>
+            <h6><i class="fas fa-calendar my-2 mr-2"></i> Me interesa mucho adentrar al mundo de la programacion a un nivel profesional pues nomas lo eh visto en proyectos escolares y personales</h6>
+            <hr>
+            <h5 class="mt-4">Hobbies</h5>
+            <h6><i class="fas fa-calendar my-2 mr-2"></i> Me interesa todo lo que tenga que ver con las computadoras, darle mantenimiento a estas tambien es algo que disfruto hacer</h6>
+            <hr>
+            <h5 class="mt-4">Trabajo</h5>
+            <h6><i class="fas fa-calendar my-2 mr-2"></i> En un trabajo me gustaria tener:<ul>
+                <li>Aprendizaje continuo.</li>
+                <li>Trabajo en equipo.</li>
+                <li>Comunicacion.</li>
+                <li>Oportunidades de crecimiento.</li>
+                </ul></h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class=" footer bg-dark mt-4 ">
+    <h5 class="py-4 text-white text-center">
+      <small><small> El codigo de la pagina esta en mi <a href="https://github.com/EVERHA20">Github</a></small></small>
+      </h5>
+  </div>
+</body>

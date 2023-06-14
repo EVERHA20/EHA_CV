@@ -1,0 +1,14 @@
+<!--<p style="color: green"><%= notice %></p>-->
+
+<%= render @comment %>
+
+<div>
+  <!--<%= link_to "Editar comentario", edit_comment_path(@comment) %>-->
+  <%= link_to "Todos los comentarios", comments_path %>
+
+  <!--<%= button_to "Borrar comentario", @comment, method: :delete %>-->
+</div>
+
+<div class= "container">
+  <% render 'comments/form', comment: @comment%>
+</div>

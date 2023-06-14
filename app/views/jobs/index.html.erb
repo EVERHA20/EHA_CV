@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+<div class="container">
+<h1>Experiencia Laboral:</h1>
+
+<div id="jobs">
+  <% @jobs.each do |job| %>
+    <%= render job %>
+    <p>
+      <%= link_to "Mostrar", job %>
+    </p>
+  <% end %>
+</div>
+
+<!--<%#button type="button" class="btn-outline-primary"><%= link_to "Nueva Experiencia", new_job_path %></div></button>-->

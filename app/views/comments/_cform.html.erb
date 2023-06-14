@@ -1,0 +1,6 @@
+<%= form_with(model: Comment.new ) do |f| %>
+    <div class="cform-control">
+        <%=f.rich_text_area :content %>
+        <%=f.submit "Comentar",class: "btn btn-primary mt-1" %>
+    </div>
+<% end %>

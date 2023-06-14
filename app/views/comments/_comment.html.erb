@@ -1,0 +1,35 @@
+<div id="<%= dom_id comment %>">
+  <div class="card text-white bg-dark mb-3 w-50">
+    <div>
+      <h5 class="card-title"><p>Posted by <%= comment.user.email %></p></h5>
+        <div class="d-flex align-items-center mb-3">
+          <h6 class="card-subtitle mb-2 text-muted">at 
+          <%= comment.created_at.strftime("%B %d %Y, %l:%M%P") %>
+          </h6>
+          <a href="#!" class="link-muted"><i class="fas fa-pencil-alt ms-2"></i></a>
+          <a href="#!" class="link-muted"><i class="fas fa-redo-alt ms-2"></i></a>
+          <a href="#!" class="link-muted"><i class="fas fa-heart ms-2"></i></a>
+        </div>
+      <% if current_user == comment.user %>
+        <div class="button-group float-end">
+        <%= link_to "Editar", edit_comment_path(comment), class: "btn btn-warning",
+        data: {
+        controller: "comments",
+        action: "comments#toggleForm",
+        comments_form_param: "edit-form-#{comment.id}",
+        comments_body_param: "comment-content-#{comment.id}",
+      } %>
+        <%= button_to "Borrar", [comment], class:"btn btn-danger", method: :delete %>
+        </div>
+        <% end %>
+        <p class="mb-0">
+        <hr >
+        <div id="comment-body-<%= comment.id %>">
+        <%= comment.content %>
+      </p>
+    </div>
+  </div>
+</div>
+          
+
+

@@ -1,0 +1,23 @@
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--<p style="color: green"><%= notice %></p>-->
+
+<h4><small>Comentarios:</small></h4>
+<hr>
+
+<%= button_to "Comentar", new_comment_path %>
+
+
+
+<div id="comments">
+  <% @comments.each do |comment| %>
+   <div class="card-body">
+    <%= render comment %>
+    <p>
+      <%= link_to "Mostrar comentario", comment %>
+    </p>
+    </div>
+  <% end %>
+</div>
+
